@@ -1,0 +1,19 @@
+﻿@model PluralsightTutorial.ViewModels.HomeIndexViewModel
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>@Model.CurrentMessage</h1>
+    <table>
+        @foreach (var restaurant in Model.Restaurants)
+        {
+            <tr>
+                <td>@restaurant.Id</td>
+                <td>@restaurant.Name</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

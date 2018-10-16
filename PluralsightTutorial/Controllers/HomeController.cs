@@ -26,5 +26,9 @@ namespace PluralsightTutorial.Controllers
             model.CurrentMessage = _greeter.GetMessageOfTheDay();
             return View(model);
         }
+        public IActionResult Details(int id)
+        {
+            var model = new _restaurantData.Get(id);
+        }
     }
 }
